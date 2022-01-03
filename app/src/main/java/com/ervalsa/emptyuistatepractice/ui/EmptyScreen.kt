@@ -31,6 +31,9 @@ import com.ervalsa.emptyuistatepractice.ui.theme.Yellow
 @Composable
 fun EmptyScreen() {
     Column(
+        modifier = Modifier
+            .background(color = Green)
+        ,
         horizontalAlignment = Alignment.CenterHorizontally,
     ) {
         Surface(
@@ -38,8 +41,8 @@ fun EmptyScreen() {
                 .fillMaxWidth(),
             color = Color.White,
             shape = RoundedCornerShape(
-                bottomEnd = 40.dp,
-                bottomStart = 40.dp)
+                bottomEnd = 50.dp,
+                bottomStart = 50.dp)
         ) {
             Image(
                 modifier = Modifier
